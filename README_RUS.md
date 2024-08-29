@@ -1,3 +1,6 @@
+[text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/README_RUS.md) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/CHANGELOG) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/code-samples) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/data-samples) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/datasets) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/LICENSE) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/materials) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/misc) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/README.md) [text](../../Downloads/CPP4_3DViewer_v2.0-1-develop/src)
+
+
 # 3DViewer v2.0
 
 Разработать программу 3DViewer v2.0
