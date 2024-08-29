@@ -1,0 +1,156 @@
+\doxysection{s21\+::Model\+Facade Class Reference}
+\hypertarget{classs21_1_1_model_facade}{}\label{classs21_1_1_model_facade}\index{s21::ModelFacade@{s21::ModelFacade}}
+
+
+Фасад для работы с моделью.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1_model_facade_ad181c8d5e4dd628a1e7cfc4188d77b81}{Model\+Facade}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор фасада модели. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_facade_a19e21b6b9f06dab10cf8c5938be7024d}{load\+Model}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Загрузка модели из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_facade_aa40a75d858c8f532aa7e45e3371b55ea}{move\+Model}} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Перемещение модели. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_facade_a425b475deb7e3a785e57531e428dd213}{rotate\+ModelX}} (double x)
+\begin{DoxyCompactList}\small\item\em Вращение модели вокруг оси X. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_facade_a0812ade296bdc9b4c16f23ee1cfd045f}{rotate\+ModelY}} (double y)
+\begin{DoxyCompactList}\small\item\em Вращение модели вокруг оси Y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_facade_a7a014f702cc374f9ee9304213def01a7}{rotate\+ModelZ}} (double z)
+\begin{DoxyCompactList}\small\item\em Вращение модели вокруг оси Z. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_facade_a7015b49f434ecab42df80987c523c42d}{change\+Scale}} (double scale)
+\begin{DoxyCompactList}\small\item\em Изменение масштаба модели. \end{DoxyCompactList}\item 
+\Hypertarget{classs21_1_1_model_facade_a8c74135d099f1fd00e2bfc1b89930e4a}\label{classs21_1_1_model_facade_a8c74135d099f1fd00e2bfc1b89930e4a} 
+void {\bfseries set\+Center} ()
+\begin{DoxyCompactList}\small\item\em Установка центра модели. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Фасад для работы с моделью. 
+
+Этот класс предоставляет удобный интерфейс для загрузки модели, изменения ее положения, вращения, масштабирования, а также установки центра модели. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classs21_1_1_model_facade_ad181c8d5e4dd628a1e7cfc4188d77b81}\label{classs21_1_1_model_facade_ad181c8d5e4dd628a1e7cfc4188d77b81} 
+\index{s21::ModelFacade@{s21::ModelFacade}!ModelFacade@{ModelFacade}}
+\index{ModelFacade@{ModelFacade}!s21::ModelFacade@{s21::ModelFacade}}
+\doxysubsubsection{\texorpdfstring{ModelFacade()}{ModelFacade()}}
+{\footnotesize\ttfamily s21\+::\+Model\+Facade\+::\+Model\+Facade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор фасада модели. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Ссылка на модель. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classs21_1_1_model_facade_a7015b49f434ecab42df80987c523c42d}\label{classs21_1_1_model_facade_a7015b49f434ecab42df80987c523c42d} 
+\index{s21::ModelFacade@{s21::ModelFacade}!changeScale@{changeScale}}
+\index{changeScale@{changeScale}!s21::ModelFacade@{s21::ModelFacade}}
+\doxysubsubsection{\texorpdfstring{changeScale()}{changeScale()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+Facade\+::change\+Scale (\begin{DoxyParamCaption}\item[{double}]{scale }\end{DoxyParamCaption})}
+
+
+
+Изменение масштаба модели. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Масштаб. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_model_facade_a19e21b6b9f06dab10cf8c5938be7024d}\label{classs21_1_1_model_facade_a19e21b6b9f06dab10cf8c5938be7024d} 
+\index{s21::ModelFacade@{s21::ModelFacade}!loadModel@{loadModel}}
+\index{loadModel@{loadModel}!s21::ModelFacade@{s21::ModelFacade}}
+\doxysubsubsection{\texorpdfstring{loadModel()}{loadModel()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+Facade\+::load\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Загрузка модели из файла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Имя файла модели. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_model_facade_aa40a75d858c8f532aa7e45e3371b55ea}\label{classs21_1_1_model_facade_aa40a75d858c8f532aa7e45e3371b55ea} 
+\index{s21::ModelFacade@{s21::ModelFacade}!moveModel@{moveModel}}
+\index{moveModel@{moveModel}!s21::ModelFacade@{s21::ModelFacade}}
+\doxysubsubsection{\texorpdfstring{moveModel()}{moveModel()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+Facade\+::move\+Model (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})}
+
+
+
+Перемещение модели. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Смещение по оси X. \\
+\hline
+{\em y} & Смещение по оси Y. \\
+\hline
+{\em z} & Смещение по оси Z. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_model_facade_a425b475deb7e3a785e57531e428dd213}\label{classs21_1_1_model_facade_a425b475deb7e3a785e57531e428dd213} 
+\index{s21::ModelFacade@{s21::ModelFacade}!rotateModelX@{rotateModelX}}
+\index{rotateModelX@{rotateModelX}!s21::ModelFacade@{s21::ModelFacade}}
+\doxysubsubsection{\texorpdfstring{rotateModelX()}{rotateModelX()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+Facade\+::rotate\+ModelX (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Вращение модели вокруг оси X. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Угол вращения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_model_facade_a0812ade296bdc9b4c16f23ee1cfd045f}\label{classs21_1_1_model_facade_a0812ade296bdc9b4c16f23ee1cfd045f} 
+\index{s21::ModelFacade@{s21::ModelFacade}!rotateModelY@{rotateModelY}}
+\index{rotateModelY@{rotateModelY}!s21::ModelFacade@{s21::ModelFacade}}
+\doxysubsubsection{\texorpdfstring{rotateModelY()}{rotateModelY()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+Facade\+::rotate\+ModelY (\begin{DoxyParamCaption}\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+Вращение модели вокруг оси Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & Угол вращения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_model_facade_a7a014f702cc374f9ee9304213def01a7}\label{classs21_1_1_model_facade_a7a014f702cc374f9ee9304213def01a7} 
+\index{s21::ModelFacade@{s21::ModelFacade}!rotateModelZ@{rotateModelZ}}
+\index{rotateModelZ@{rotateModelZ}!s21::ModelFacade@{s21::ModelFacade}}
+\doxysubsubsection{\texorpdfstring{rotateModelZ()}{rotateModelZ()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+Facade\+::rotate\+ModelZ (\begin{DoxyParamCaption}\item[{double}]{z }\end{DoxyParamCaption})}
+
+
+
+Вращение модели вокруг оси Z. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & Угол вращения. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/model.\+h\end{DoxyCompactItemize}

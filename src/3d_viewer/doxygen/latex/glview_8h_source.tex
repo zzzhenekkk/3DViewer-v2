@@ -1,0 +1,76 @@
+\doxysection{glview.\+h}
+\hypertarget{glview_8h_source}{}\label{glview_8h_source}\index{view/glview.h@{view/glview.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GLVIEW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GLVIEW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ GL\_SILENCE\_DEPRECATION}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QMouseEvent>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QOpenGLWidget>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../controller/controller.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../model/model.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ \#include\ "{}view.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ PARALLEL\ 1}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ CENTRAL\ 0}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ SOLID\ 1}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ DASHED\ 0}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ VERTEX\_NONE\ 0}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ VERTEX\_CIRCLE\ 1}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ VERTEX\_SQUARE\ 2}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }s21\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structs21_1_1setting}{setting}}\ \{}
+\DoxyCodeLine{00028\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_a2288fc135ed7f66185045d2c3885639a}{move\_x\_}}\ =\ 0;\ }
+\DoxyCodeLine{00029\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_a4c9cff353827ebe2d6f1e49091065370}{move\_y\_}}\ =\ 0;\ }
+\DoxyCodeLine{00030\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_a7791f0375c167555ab39d195aa979fb6}{move\_z\_}}\ =\ 0;\ }
+\DoxyCodeLine{00031\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_a72c27db8f73a4496dac4cbc09d4016f0}{rotate\_x\_}}\ =\ 0;\ }
+\DoxyCodeLine{00032\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_a9ad259eafda52d6ad2a9a7424a1cf6b9}{rotate\_y\_}}\ =\ 0;\ }
+\DoxyCodeLine{00033\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_af8b37bda1d1ab05212eaaaa866759fcf}{rotate\_z\_}}\ =\ 0;\ }
+\DoxyCodeLine{00034\ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs21_1_1setting_afbb71be1129755571eb75f488dea395f}{scale\_}}\ =\ 10.;\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ QColor\ \mbox{\hyperlink{structs21_1_1setting_aecf27e617b9c08295afc7c7c2cd70527}{background\_color\_}}\ =\ Qt::black;\ }
+\DoxyCodeLine{00037\ \ QColor\ vertex\_color\_\ =\ Qt::white,\ \mbox{\hyperlink{structs21_1_1setting_a73d37504164a957339e4d67206dbdbf2}{edge\_color\_}}\ =\ Qt::white;\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_a9cef38ff65da1be69fbd187b784401c5}{type\_vertexes\_}}\ =\ VERTEX\_NONE;\ }
+\DoxyCodeLine{00040\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_a44779ae7e31747e3607bb9b0e601532d}{type\_projection\_}}\ =\ CENTRAL;\ }
+\DoxyCodeLine{00041\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs21_1_1setting_a93feecdae7b34f59953f8e0dd3677cfa}{type\_line\_}}\ =\ SOLID;\ }
+\DoxyCodeLine{00042\ \ \textcolor{keywordtype}{float}\ vertex\_thicknes\_\ =\ 0.5,\ \mbox{\hyperlink{structs21_1_1setting_a421d768e8c56e142feb945bfc4525330}{edge\_thicknes\_}}\ =\ 0.5;\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \}\ \mbox{\hyperlink{structs21_1_1setting}{Setting}};}
+\DoxyCodeLine{00045\ \}\ \textcolor{comment}{//\ namespace\ s21}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classgl_view}{glView}}\ :\ \textcolor{keyword}{public}\ QOpenGLWidget\ \{}
+\DoxyCodeLine{00053\ \ Q\_OBJECT}
+\DoxyCodeLine{00054\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \mbox{\hyperlink{classgl_view_ab9e843d39418a8507acc001faf33ede8}{glView}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00060\ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classgl_view_a56138db36289e43d08da21d872f02eb0}{xRot}}\ =\ 0;\ }
+\DoxyCodeLine{00061\ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classgl_view_ab2cc9314e3633f0332f052c952c8edc4}{yRot}}\ =\ 0;\ }
+\DoxyCodeLine{00062\ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classgl_view_a450280a053ae07208224cac0195c4a29}{xRotLast}}\ =\ 0;\ }
+\DoxyCodeLine{00063\ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classgl_view_a2f0141a045248e0c9953e4053a6d3232}{yRotLast}}\ =\ 0;\ }
+\DoxyCodeLine{00064\ \ QPoint\ \mbox{\hyperlink{classgl_view_a05d2fd5bb46b7def27d94841038fe319}{mpos}};\ }
+\DoxyCodeLine{00069\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgl_view_a04ce5852a886397431bc7ebc38ca6b48}{setController}}(\mbox{\hyperlink{classs21_1_1_controller}{s21::Controller}}*\ controller);}
+\DoxyCodeLine{00074\ \ \mbox{\hyperlink{structs21_1_1setting}{s21::Setting}}\&\ \mbox{\hyperlink{classgl_view_a7b63f0087f959b05cf9f3497cfa7ab48}{getSetting}}();}
+\DoxyCodeLine{00079\ \ QImage\ \mbox{\hyperlink{classgl_view_a592e8acfc780fc65382800f2ee6269af}{s21\_grabFrameBuffer}}();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00085\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgl_view_ab659590a85e20729a340cdec79bf451d}{initializeGL}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00091\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgl_view_abac6f1178af78c5bdbd3a61f03a8c318}{resizeGL}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00095\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgl_view_abc7037d40bbb6b0ca4dca440ded125d7}{paintGL}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00102\ \ \textcolor{keywordtype}{void}\ mousePressEvent(QMouseEvent*)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00107\ \ \textcolor{keywordtype}{void}\ mouseMoveEvent(QMouseEvent*\ mo)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00108\ \ \mbox{\hyperlink{classs21_1_1_controller}{s21::Controller}}*\ controller\_\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00109\ \ \mbox{\hyperlink{structs21_1_1setting}{s21::Setting}}\ setting\_\{\};\ }
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \textcolor{comment}{//\ public\ slots:}}
+\DoxyCodeLine{00112\ \ \textcolor{comment}{//\ \ \ \ \ void\ triggerRender(QString\ fileName);}}
+\DoxyCodeLine{00113\ \};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VIEW\_H}}
+
+\end{DoxyCode}

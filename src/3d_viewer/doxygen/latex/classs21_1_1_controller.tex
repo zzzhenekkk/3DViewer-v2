@@ -1,0 +1,248 @@
+\doxysection{s21\+::Controller Class Reference}
+\hypertarget{classs21_1_1_controller}{}\label{classs21_1_1_controller}\index{s21::Controller@{s21::Controller}}
+
+
+Класс контроллера для управления моделью и представлением.  
+
+
+
+
+{\ttfamily \#include $<$controller.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1_controller_ae2725cc4c483b3d2adf8200474a75755}{Controller}} (\mbox{\hyperlink{classs21_1_1_model}{Model}} \texorpdfstring{$\ast$}{*}model)
+\begin{DoxyCompactList}\small\item\em Конструктор контроллера. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_controller_a5e32b31806086d1a7913ba34a9e1228e}{set\+View}} (\mbox{\hyperlink{classview}{view}} \texorpdfstring{$\ast$}{*}view\+Tmp\+\_\+)
+\begin{DoxyCompactList}\small\item\em Установка представления. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_controller_ac1f21a7210bcd3eed12cd4a3e0ce2c9a}{load\+Model}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Загрузка модели из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_controller_a3d89635e0f92117a39f336fae776310a}{move\+Model}} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Перемещение модели. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_controller_a1b0bfba9f7bf4b7cc482f530c44a52c9}{rotate\+ModelX}} (double x)
+\begin{DoxyCompactList}\small\item\em Вращение модели вокруг оси X. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_controller_a4f42cd35f68c253b7a17c6cc78a3aa85}{rotate\+ModelY}} (double x)
+\begin{DoxyCompactList}\small\item\em Вращение модели вокруг оси Y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_controller_a4add76cc2c06dd121e0b647c6c912752}{rotate\+ModelZ}} (double x)
+\begin{DoxyCompactList}\small\item\em Вращение модели вокруг оси Z. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_controller_a2292068af1598297fb972b0a4aef402c}{change\+Scale}} (double scale)
+\begin{DoxyCompactList}\small\item\em Изменение масштаба модели. \end{DoxyCompactList}\item 
+\Hypertarget{classs21_1_1_controller_a946be7004ed02ac38d5cb43f10b39bfa}\label{classs21_1_1_controller_a946be7004ed02ac38d5cb43f10b39bfa} 
+void {\bfseries set\+Center} ()
+\begin{DoxyCompactList}\small\item\em Установка центра модели. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classs21_1_1_controller_ad36afd845e849a2c0e6d53fe88477171}{get\+Count\+Vertexes}} ()
+\begin{DoxyCompactList}\small\item\em Получение количества вершин в модели. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classs21_1_1_controller_af7330063923a9400e164229e368ff98f}{get\+Count\+Polygons}} ()
+\begin{DoxyCompactList}\small\item\em Получение количества полигонов в модели. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classs21_1_1_controller_abab6ce877122712d2d8bc9afc6336e85}{get\+Count\+Edges}} ()
+\begin{DoxyCompactList}\small\item\em Получение количества ребер в модели. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1_controller_af9fa5a9cb2a5a94af10ede8b8bff1a8c}{get\+Vertexes}} ()
+\begin{DoxyCompactList}\small\item\em Получение вектора вершин модели. \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned int $>$ \& \mbox{\hyperlink{classs21_1_1_controller_acd57d0bee3ac578c1af4442a8827392b}{get\+Polygons}} ()
+\begin{DoxyCompactList}\small\item\em Получение вектора полигонов модели. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс контроллера для управления моделью и представлением. 
+
+Этот класс предоставляет функции для загрузки модели, изменения ее положения, вращения, масштабирования, а также получения информации о модели, такой как количество вершин, полигонов и ребер. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classs21_1_1_controller_ae2725cc4c483b3d2adf8200474a75755}\label{classs21_1_1_controller_ae2725cc4c483b3d2adf8200474a75755} 
+\index{s21::Controller@{s21::Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{Controller()}{Controller()}}
+{\footnotesize\ttfamily s21\+::\+Controller\+::\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1_model}{Model}} \texorpdfstring{$\ast$}{*}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор контроллера. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Указатель на модель. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classs21_1_1_controller_a2292068af1598297fb972b0a4aef402c}\label{classs21_1_1_controller_a2292068af1598297fb972b0a4aef402c} 
+\index{s21::Controller@{s21::Controller}!changeScale@{changeScale}}
+\index{changeScale@{changeScale}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{changeScale()}{changeScale()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::change\+Scale (\begin{DoxyParamCaption}\item[{double}]{scale }\end{DoxyParamCaption})}
+
+
+
+Изменение масштаба модели. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Масштаб. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_controller_abab6ce877122712d2d8bc9afc6336e85}\label{classs21_1_1_controller_abab6ce877122712d2d8bc9afc6336e85} 
+\index{s21::Controller@{s21::Controller}!getCountEdges@{getCountEdges}}
+\index{getCountEdges@{getCountEdges}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{getCountEdges()}{getCountEdges()}}
+{\footnotesize\ttfamily int s21\+::\+Controller\+::get\+Count\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение количества ребер в модели. 
+
+\begin{DoxyReturn}{Returns}
+Количество ребер. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_controller_af7330063923a9400e164229e368ff98f}\label{classs21_1_1_controller_af7330063923a9400e164229e368ff98f} 
+\index{s21::Controller@{s21::Controller}!getCountPolygons@{getCountPolygons}}
+\index{getCountPolygons@{getCountPolygons}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{getCountPolygons()}{getCountPolygons()}}
+{\footnotesize\ttfamily int s21\+::\+Controller\+::get\+Count\+Polygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение количества полигонов в модели. 
+
+\begin{DoxyReturn}{Returns}
+Количество полигонов. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_controller_ad36afd845e849a2c0e6d53fe88477171}\label{classs21_1_1_controller_ad36afd845e849a2c0e6d53fe88477171} 
+\index{s21::Controller@{s21::Controller}!getCountVertexes@{getCountVertexes}}
+\index{getCountVertexes@{getCountVertexes}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{getCountVertexes()}{getCountVertexes()}}
+{\footnotesize\ttfamily int s21\+::\+Controller\+::get\+Count\+Vertexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение количества вершин в модели. 
+
+\begin{DoxyReturn}{Returns}
+Количество вершин. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_controller_acd57d0bee3ac578c1af4442a8827392b}\label{classs21_1_1_controller_acd57d0bee3ac578c1af4442a8827392b} 
+\index{s21::Controller@{s21::Controller}!getPolygons@{getPolygons}}
+\index{getPolygons@{getPolygons}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{getPolygons()}{getPolygons()}}
+{\footnotesize\ttfamily std\+::vector$<$ unsigned int $>$ \& s21\+::\+Controller\+::get\+Polygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение вектора полигонов модели. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на вектор полигонов. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_controller_af9fa5a9cb2a5a94af10ede8b8bff1a8c}\label{classs21_1_1_controller_af9fa5a9cb2a5a94af10ede8b8bff1a8c} 
+\index{s21::Controller@{s21::Controller}!getVertexes@{getVertexes}}
+\index{getVertexes@{getVertexes}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{getVertexes()}{getVertexes()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Controller\+::get\+Vertexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение вектора вершин модели. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на вектор вершин. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_controller_ac1f21a7210bcd3eed12cd4a3e0ce2c9a}\label{classs21_1_1_controller_ac1f21a7210bcd3eed12cd4a3e0ce2c9a} 
+\index{s21::Controller@{s21::Controller}!loadModel@{loadModel}}
+\index{loadModel@{loadModel}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{loadModel()}{loadModel()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::load\+Model (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Загрузка модели из файла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Путь к файлу модели. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_controller_a3d89635e0f92117a39f336fae776310a}\label{classs21_1_1_controller_a3d89635e0f92117a39f336fae776310a} 
+\index{s21::Controller@{s21::Controller}!moveModel@{moveModel}}
+\index{moveModel@{moveModel}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{moveModel()}{moveModel()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::move\+Model (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})}
+
+
+
+Перемещение модели. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Смещение по оси X. \\
+\hline
+{\em y} & Смещение по оси Y. \\
+\hline
+{\em z} & Смещение по оси Z. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_controller_a1b0bfba9f7bf4b7cc482f530c44a52c9}\label{classs21_1_1_controller_a1b0bfba9f7bf4b7cc482f530c44a52c9} 
+\index{s21::Controller@{s21::Controller}!rotateModelX@{rotateModelX}}
+\index{rotateModelX@{rotateModelX}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{rotateModelX()}{rotateModelX()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::rotate\+ModelX (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Вращение модели вокруг оси X. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Угол вращения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_controller_a4f42cd35f68c253b7a17c6cc78a3aa85}\label{classs21_1_1_controller_a4f42cd35f68c253b7a17c6cc78a3aa85} 
+\index{s21::Controller@{s21::Controller}!rotateModelY@{rotateModelY}}
+\index{rotateModelY@{rotateModelY}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{rotateModelY()}{rotateModelY()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::rotate\+ModelY (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Вращение модели вокруг оси Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Угол вращения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_controller_a4add76cc2c06dd121e0b647c6c912752}\label{classs21_1_1_controller_a4add76cc2c06dd121e0b647c6c912752} 
+\index{s21::Controller@{s21::Controller}!rotateModelZ@{rotateModelZ}}
+\index{rotateModelZ@{rotateModelZ}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{rotateModelZ()}{rotateModelZ()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::rotate\+ModelZ (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Вращение модели вокруг оси Z. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Угол вращения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_controller_a5e32b31806086d1a7913ba34a9e1228e}\label{classs21_1_1_controller_a5e32b31806086d1a7913ba34a9e1228e} 
+\index{s21::Controller@{s21::Controller}!setView@{setView}}
+\index{setView@{setView}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{setView()}{setView()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::set\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classview}{view}} \texorpdfstring{$\ast$}{*}}]{view\+Tmp\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Установка представления. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Tmp\+\_\+} & Указатель на представление. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+controller/controller.\+h\end{DoxyCompactItemize}

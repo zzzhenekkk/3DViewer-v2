@@ -1,0 +1,39 @@
+\doxysection{parser.\+h}
+\hypertarget{parser_8h_source}{}\label{parser_8h_source}\index{model/utils/parser.h@{model/utils/parser.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PARSER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PARSER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../model/polygons.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../model/vertexes.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../model/model.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }s21\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classs21_1_1_parser}{Parser}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \mbox{\hyperlink{classs21_1_1_parser_a17a9013228b99d665f640c58758f9359}{Parser}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_parser_aab8c3dee1e022bf9751f66c2a8eb4eac}{parse}}(std::string\ path);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \mbox{\hyperlink{classs21_1_1_parser_a17a9013228b99d665f640c58758f9359}{Parser}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_parser}{Parser}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \mbox{\hyperlink{classs21_1_1_parser}{Parser}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_parser}{Parser}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ parseF(\textcolor{keyword}{const}\ std::string\ \&line);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ parseV(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *c\_line);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \}\ \textcolor{comment}{//\ namespace\ s21}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

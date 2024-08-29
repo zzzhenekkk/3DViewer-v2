@@ -1,0 +1,166 @@
+\doxysection{s21\+::Affine Class Reference}
+\hypertarget{classs21_1_1_affine}{}\label{classs21_1_1_affine}\index{s21::Affine@{s21::Affine}}
+
+
+Класс для выполнения аффинных преобразований над вектором вершин.  
+
+
+
+
+{\ttfamily \#include $<$affine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classs21_1_1_affine_a6272e7707be00bfc1cc459aed215af82}\label{classs21_1_1_affine_a6272e7707be00bfc1cc459aed215af82} 
+{\bfseries Affine} ()=delete
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{classs21_1_1_affine}{Affine} запрещен. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classs21_1_1_affine_ab03d4f81162545115cd14e92ede2c0c7}{normalize}} (std\+::vector$<$ float $>$ \&vektor\+Vertexes)
+\begin{DoxyCompactList}\small\item\em Нормализует вектор вершин. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classs21_1_1_affine_ad3e61e38341c9a75cc2032a4a6138b75}{change\+Scale}} (std\+::vector$<$ float $>$ \&vektor\+Vertexes, float coef)
+\begin{DoxyCompactList}\small\item\em Изменяет масштаб вектора вершин. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classs21_1_1_affine_a49b5b214e1fe53a705bdea3517c71d98}{centralize}} (std\+::vector$<$ float $>$ \&vektor\+Vertexes)
+\begin{DoxyCompactList}\small\item\em Центрирует вектор вершин. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classs21_1_1_affine_ad0c2b16c756b3f35449318bf38bc9962}{shift}} (std\+::vector$<$ float $>$ \&vektor\+Vertexes, double value1, double value2, double value3)
+\begin{DoxyCompactList}\small\item\em Сдвигает вектор вершин. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classs21_1_1_affine_a8e7de349873e1f9a4cb260755a2e79a5}{rotateX}} (std\+::vector$<$ float $>$ \&vektor\+Vertexes, float angle)
+\begin{DoxyCompactList}\small\item\em Вращает вектор вершин вокруг оси X. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classs21_1_1_affine_af45687624d107f726829ff1a09a52942}{rotateY}} (std\+::vector$<$ float $>$ \&vektor\+Vertexes, float angle)
+\begin{DoxyCompactList}\small\item\em Вращает вектор вершин вокруг оси Y. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classs21_1_1_affine_acbc3d686171eebed55259416b1bb00f8}{rotateZ}} (std\+::vector$<$ float $>$ \&vektor\+Vertexes, float angle)
+\begin{DoxyCompactList}\small\item\em Вращает вектор вершин вокруг оси Z. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для выполнения аффинных преобразований над вектором вершин. 
+
+Этот класс предоставляет статические методы для нормализации, изменения масштаба, центрирования, сдвига и вращения вектора вершин. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classs21_1_1_affine_a49b5b214e1fe53a705bdea3517c71d98}\label{classs21_1_1_affine_a49b5b214e1fe53a705bdea3517c71d98} 
+\index{s21::Affine@{s21::Affine}!centralize@{centralize}}
+\index{centralize@{centralize}!s21::Affine@{s21::Affine}}
+\doxysubsubsection{\texorpdfstring{centralize()}{centralize()}}
+{\footnotesize\ttfamily static void s21\+::\+Affine\+::centralize (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{vektor\+Vertexes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Центрирует вектор вершин. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vektor\+Vertexes} & Вектор вершин для центрирования. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_affine_ad3e61e38341c9a75cc2032a4a6138b75}\label{classs21_1_1_affine_ad3e61e38341c9a75cc2032a4a6138b75} 
+\index{s21::Affine@{s21::Affine}!changeScale@{changeScale}}
+\index{changeScale@{changeScale}!s21::Affine@{s21::Affine}}
+\doxysubsubsection{\texorpdfstring{changeScale()}{changeScale()}}
+{\footnotesize\ttfamily static void s21\+::\+Affine\+::change\+Scale (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{vektor\+Vertexes,  }\item[{float}]{coef }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Изменяет масштаб вектора вершин. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vektor\+Vertexes} & Вектор вершин для изменения масштаба. \\
+\hline
+{\em coef} & Коэффициент масштабирования. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_affine_ab03d4f81162545115cd14e92ede2c0c7}\label{classs21_1_1_affine_ab03d4f81162545115cd14e92ede2c0c7} 
+\index{s21::Affine@{s21::Affine}!normalize@{normalize}}
+\index{normalize@{normalize}!s21::Affine@{s21::Affine}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily static void s21\+::\+Affine\+::normalize (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{vektor\+Vertexes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Нормализует вектор вершин. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vektor\+Vertexes} & Вектор вершин для нормализации. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_affine_a8e7de349873e1f9a4cb260755a2e79a5}\label{classs21_1_1_affine_a8e7de349873e1f9a4cb260755a2e79a5} 
+\index{s21::Affine@{s21::Affine}!rotateX@{rotateX}}
+\index{rotateX@{rotateX}!s21::Affine@{s21::Affine}}
+\doxysubsubsection{\texorpdfstring{rotateX()}{rotateX()}}
+{\footnotesize\ttfamily static void s21\+::\+Affine\+::rotateX (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{vektor\+Vertexes,  }\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вращает вектор вершин вокруг оси X. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vektor\+Vertexes} & Вектор вершин для вращения. \\
+\hline
+{\em angle} & Угол вращения в градусах. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_affine_af45687624d107f726829ff1a09a52942}\label{classs21_1_1_affine_af45687624d107f726829ff1a09a52942} 
+\index{s21::Affine@{s21::Affine}!rotateY@{rotateY}}
+\index{rotateY@{rotateY}!s21::Affine@{s21::Affine}}
+\doxysubsubsection{\texorpdfstring{rotateY()}{rotateY()}}
+{\footnotesize\ttfamily static void s21\+::\+Affine\+::rotateY (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{vektor\+Vertexes,  }\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вращает вектор вершин вокруг оси Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vektor\+Vertexes} & Вектор вершин для вращения. \\
+\hline
+{\em angle} & Угол вращения в градусах. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_affine_acbc3d686171eebed55259416b1bb00f8}\label{classs21_1_1_affine_acbc3d686171eebed55259416b1bb00f8} 
+\index{s21::Affine@{s21::Affine}!rotateZ@{rotateZ}}
+\index{rotateZ@{rotateZ}!s21::Affine@{s21::Affine}}
+\doxysubsubsection{\texorpdfstring{rotateZ()}{rotateZ()}}
+{\footnotesize\ttfamily static void s21\+::\+Affine\+::rotateZ (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{vektor\+Vertexes,  }\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вращает вектор вершин вокруг оси Z. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vektor\+Vertexes} & Вектор вершин для вращения. \\
+\hline
+{\em angle} & Угол вращения в градусах. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_affine_ad0c2b16c756b3f35449318bf38bc9962}\label{classs21_1_1_affine_ad0c2b16c756b3f35449318bf38bc9962} 
+\index{s21::Affine@{s21::Affine}!shift@{shift}}
+\index{shift@{shift}!s21::Affine@{s21::Affine}}
+\doxysubsubsection{\texorpdfstring{shift()}{shift()}}
+{\footnotesize\ttfamily static void s21\+::\+Affine\+::shift (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{vektor\+Vertexes,  }\item[{double}]{value1,  }\item[{double}]{value2,  }\item[{double}]{value3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Сдвигает вектор вершин. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vektor\+Vertexes} & Вектор вершин для сдвига. \\
+\hline
+{\em value1} & Сдвиг по оси X. \\
+\hline
+{\em value2} & Сдвиг по оси Y. \\
+\hline
+{\em value3} & Сдвиг по оси Z. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/utils/affine.\+h\end{DoxyCompactItemize}

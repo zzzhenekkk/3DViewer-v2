@@ -1,0 +1,108 @@
+\doxysection{settings.\+h}
+\hypertarget{settings_8h_source}{}\label{settings_8h_source}\index{model/utils/settings.h@{model/utils/settings.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ PARALLEL\ 1}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ CENTRAL\ 0}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ SOLID\ 1}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ DASHED\ 0}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ VERTEX\_NONE\ 0}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ VERTEX\_CIRCLE\ 1}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ VERTEX\_SQUARE\ 2}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }s21\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classs21_1_1_settings}{Settings}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classs21_1_1_settings}{Settings}}\&\ \mbox{\hyperlink{classs21_1_1_settings_a8f485d7f277527a5e9fa1ce6fd9cb090}{getInstance}}()\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classs21_1_1_settings}{Settings}}\ instance;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structs21_1_1_settings_1_1s21__color}{s21\_color}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ red;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ green;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ blue;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}\ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ shift\_x\_\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ shift\_y\_\ =\ 0;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ shift\_z\_\ =\ 0;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rotate\_x\_\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rotate\_y\_\ =\ 0;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rotate\_z\_\ =\ 0;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ scale\_\ =\ 1.0;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ projection\_\ =\ CENTRAL;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ linetype\_\ =\ 1;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ thickness\_\ =\ 1.0f;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ vertextype\_\ =\ VERTEX\_NONE;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ vertex\_thicknes\_\ =\ 2.0f;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ error\ =\ 1;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\ s21\_background\_glcolor\ =\ \{1.0,\ 1.0,\ 1.0\};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\ vertex\_color\{\};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\ line\_color\{\};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x\_rot\_\ =\ 0;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ y\_rot\_\ =\ 0;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x\_rot\_last\_\ =\ 0;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ y\_rot\_last\_\ =\ 0;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Геттеры\ и\ сеттеры}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getShiftX()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ shift\_x\_;\ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setShiftX(\textcolor{keywordtype}{int}\ value)\ \{\ shift\_x\_\ =\ value;\ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getShiftY()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ shift\_y\_;\ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setShiftY(\textcolor{keywordtype}{int}\ value)\ \{\ shift\_y\_\ =\ value;\ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getShiftZ()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ shift\_z\_;\ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setShiftZ(\textcolor{keywordtype}{int}\ value)\ \{\ shift\_z\_\ =\ value;\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getRotateX()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ rotate\_x\_;\ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setRotateX(\textcolor{keywordtype}{int}\ value)\ \{\ rotate\_x\_\ =\ value;\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getRotateY()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ rotate\_y\_;\ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setRotateY(\textcolor{keywordtype}{int}\ value)\ \{\ rotate\_y\_\ =\ value;\ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getRotateZ()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ rotate\_z\_;\ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setRotateZ(\textcolor{keywordtype}{int}\ value)\ \{\ rotate\_z\_\ =\ value;\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ getScale()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ scale\_;\ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setScale(\textcolor{keywordtype}{float}\ value)\ \{\ scale\_\ =\ value;\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Примеры\ для\ работы\ со\ структурами\ и\ цветами}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\ getBackgroundColor()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ s21\_background\_glcolor;\ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setBackgroundColor(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\&\ color)\ \{\ s21\_background\_glcolor\ =\ color;\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\ getVertexColor()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ vertex\_color;\ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setVertexColor(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\&\ color)\ \{\ vertex\_color\ =\ color;\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\ getLineColor()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ line\_color;\ \}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setLineColor(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_settings_addc81afbed91ceecab34c31e9c2e0668}{s21\_color}}\&\ color)\ \{\ line\_color\ =\ color;\ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Примеры\ для\ float\ переменных}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ getXRot()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ x\_rot\_;\ \}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setXRot(\textcolor{keywordtype}{float}\ value)\ \{\ x\_rot\_\ =\ value;\ \}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ getYRot()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ y\_rot\_;\ \}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setYRot(\textcolor{keywordtype}{float}\ value)\ \{\ y\_rot\_\ =\ value;\ \}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ И\ так\ далее\ для\ всех\ оставшихся\ переменных}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Предполагаемые\ дополнительные\ методы\ для\ управления\ другими\ переменными...}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Закрытый\ конструктор,\ копирование\ и\ операция\ присваивания\ для\ поддержания\ синглтон\ паттерна}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ Settings()\ \{\}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ Settings(\textcolor{keyword}{const}\ Settings\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ Settings\&\ operator=(\textcolor{keyword}{const}\ Settings\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00114\ \ \ \ \ \};}
+\DoxyCodeLine{00115\ \}}
+\DoxyCodeLine{00116\ }
+
+\end{DoxyCode}

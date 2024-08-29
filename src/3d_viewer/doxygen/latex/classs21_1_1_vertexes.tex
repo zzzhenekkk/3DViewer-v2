@@ -1,0 +1,72 @@
+\doxysection{s21\+::Vertexes Class Reference}
+\hypertarget{classs21_1_1_vertexes}{}\label{classs21_1_1_vertexes}\index{s21::Vertexes@{s21::Vertexes}}
+
+
+Класс для управления коллекцией вершин.  
+
+
+
+
+{\ttfamily \#include $<$vertexes.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classs21_1_1_vertexes_a947bf96cd9dfaa55866027e0c4dc568f}\label{classs21_1_1_vertexes_a947bf96cd9dfaa55866027e0c4dc568f} 
+{\bfseries Vertexes} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{classs21_1_1_vertexes}{Vertexes}. \end{DoxyCompactList}\item 
+\Hypertarget{classs21_1_1_vertexes_aa6e34bfb162c8bb587dafc1ddba74df8}\label{classs21_1_1_vertexes_aa6e34bfb162c8bb587dafc1ddba74df8} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Vertexes} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{classs21_1_1_vertexes}{Vertexes}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_vertexes_ab7f05e6d71fda050e8fef226a2f270b3}{add\+Vertex}} (float a, float b, float c)
+\begin{DoxyCompactList}\small\item\em Добавляет вершину в коллекцию. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1_vertexes_ac11ae8168ca43e303050f39d2cc37b9c}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Получает данные, представляющие все вершины в коллекции. \end{DoxyCompactList}\item 
+\Hypertarget{classs21_1_1_vertexes_a0810d63236cb146f1d908e4f5f6a8463}\label{classs21_1_1_vertexes_a0810d63236cb146f1d908e4f5f6a8463} 
+void {\bfseries clear\+Data} ()
+\begin{DoxyCompactList}\small\item\em Очищает данные, представляющие все вершины в коллекции. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для управления коллекцией вершин. 
+
+Этот класс предоставляет функциональность для добавления вершин в коллекцию, получения данных и очистки данных. Каждая вершина представлена тремя значениями типа float (a, b, c). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classs21_1_1_vertexes_ab7f05e6d71fda050e8fef226a2f270b3}\label{classs21_1_1_vertexes_ab7f05e6d71fda050e8fef226a2f270b3} 
+\index{s21::Vertexes@{s21::Vertexes}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!s21::Vertexes@{s21::Vertexes}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}}
+{\footnotesize\ttfamily void s21\+::\+Vertexes\+::add\+Vertex (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{c }\end{DoxyParamCaption})}
+
+
+
+Добавляет вершину в коллекцию. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первая координата вершины. \\
+\hline
+{\em b} & Вторая координата вершины. \\
+\hline
+{\em c} & Третья координата вершины. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_vertexes_ac11ae8168ca43e303050f39d2cc37b9c}\label{classs21_1_1_vertexes_ac11ae8168ca43e303050f39d2cc37b9c} 
+\index{s21::Vertexes@{s21::Vertexes}!getData@{getData}}
+\index{getData@{getData}!s21::Vertexes@{s21::Vertexes}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Vertexes\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получает данные, представляющие все вершины в коллекции. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на вектор, содержащий данные всех вершин. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/vertexes.\+h\end{DoxyCompactItemize}

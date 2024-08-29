@@ -1,0 +1,65 @@
+\doxysection{s21\+::Polygons Class Reference}
+\hypertarget{classs21_1_1_polygons}{}\label{classs21_1_1_polygons}\index{s21::Polygons@{s21::Polygons}}
+
+
+A class representing a collection of polygons.  
+
+
+
+
+{\ttfamily \#include $<$polygons.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classs21_1_1_polygons_a915bc5c23c0c864ef5a1121a0af35bd1}\label{classs21_1_1_polygons_a915bc5c23c0c864ef5a1121a0af35bd1} 
+{\bfseries Polygons} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classs21_1_1_polygons}{Polygons} object. \end{DoxyCompactList}\item 
+\Hypertarget{classs21_1_1_polygons_ace7d9faa06db8f88209522075f9628db}\label{classs21_1_1_polygons_ace7d9faa06db8f88209522075f9628db} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Polygons} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \doxylink{classs21_1_1_polygons}{Polygons} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_polygons_a07909fa05ee216b6dad1faa7d7a93030}{add\+Polygon}} (std\+::vector$<$ unsigned int $>$ \&vector\+Poligon)
+\begin{DoxyCompactList}\small\item\em Adds a polygon to the collection. \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned int $>$ \& \mbox{\hyperlink{classs21_1_1_polygons_ac268c12dbd1da469ea7b3a1bbb1c589a}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the data representing all polygons in the collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a collection of polygons. 
+
+This class is designed to manage a collection of polygons, each represented by a vector of unsigned integers. It provides functionality to add polygons to the collection and retrieve the data. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classs21_1_1_polygons_a07909fa05ee216b6dad1faa7d7a93030}\label{classs21_1_1_polygons_a07909fa05ee216b6dad1faa7d7a93030} 
+\index{s21::Polygons@{s21::Polygons}!addPolygon@{addPolygon}}
+\index{addPolygon@{addPolygon}!s21::Polygons@{s21::Polygons}}
+\doxysubsubsection{\texorpdfstring{addPolygon()}{addPolygon()}}
+{\footnotesize\ttfamily void s21\+::\+Polygons\+::add\+Polygon (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unsigned int $>$ \&}]{vector\+Poligon }\end{DoxyParamCaption})}
+
+
+
+Adds a polygon to the collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector\+Poligon} & A vector representing the polygon to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_polygons_ac268c12dbd1da469ea7b3a1bbb1c589a}\label{classs21_1_1_polygons_ac268c12dbd1da469ea7b3a1bbb1c589a} 
+\index{s21::Polygons@{s21::Polygons}!getData@{getData}}
+\index{getData@{getData}!s21::Polygons@{s21::Polygons}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily std\+::vector$<$ unsigned int $>$ \& s21\+::\+Polygons\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the data representing all polygons in the collection. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the vector containing the data of all polygons. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/polygons.\+h\end{DoxyCompactItemize}

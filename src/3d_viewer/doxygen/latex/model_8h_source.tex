@@ -1,0 +1,78 @@
+\doxysection{model.\+h}
+\hypertarget{model_8h_source}{}\label{model_8h_source}\index{model/model.h@{model/model.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \#include\ "{}polygons.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ \#include\ "{}vertexes.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}utils/affine.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}utils/parser.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ \#include\ "{}../utils/validator.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }s21\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classs21_1_1_model}{Model}}\ \{}
+\DoxyCodeLine{00020\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \textcolor{comment}{//\ Удаление\ возможности\ копирования\ и\ присваивания}}
+\DoxyCodeLine{00022\ \ \mbox{\hyperlink{classs21_1_1_model}{Model}}(\mbox{\hyperlink{classs21_1_1_model}{Model}}\ \textcolor{keyword}{const}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00023\ \ \textcolor{keywordtype}{void}\ operator=(\mbox{\hyperlink{classs21_1_1_model}{Model}}\ \textcolor{keyword}{const}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classs21_1_1_model}{Model}}\&\ \mbox{\hyperlink{classs21_1_1_model_a49dd27ec9a384e284a8e5f0aef46ec54}{getInstance}}();}
+\DoxyCodeLine{00030\ \ \ }
+\DoxyCodeLine{00035\ \ std::vector<float>\&\ \mbox{\hyperlink{classs21_1_1_model_ad3f78c80a6b6c7257ae9c837f1dec3fb}{getVertexes}}();}
+\DoxyCodeLine{00036\ \ \ }
+\DoxyCodeLine{00041\ \ std::vector<unsigned\ int>\&\ \mbox{\hyperlink{classs21_1_1_model_a1a6f6ac523791d8521eed07814e0f9ac}{getPolygons}}();}
+\DoxyCodeLine{00042\ \ \ }
+\DoxyCodeLine{00047\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_acb9fb7e1990473dfba1726664f7315b3}{loadModel}}(std::string\ path);}
+\DoxyCodeLine{00048\ \ \ }
+\DoxyCodeLine{00053\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_af1524fcd54b05fa8101fe26539310326}{addPolygon}}(std::vector<unsigned\ int>\&\ nums);}
+\DoxyCodeLine{00054\ \ \ }
+\DoxyCodeLine{00061\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_a6df7f45f0fec408df126235abecc2633}{addVertex}}(\textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{float}\ c);}
+\DoxyCodeLine{00062\ \ \ }
+\DoxyCodeLine{00066\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_a8cdce569c6f8754b91bf6814d7ad8f4d}{clear}}();}
+\DoxyCodeLine{00067\ \ \ }
+\DoxyCodeLine{00072\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classs21_1_1_model_ab9e1b9f62297eb202da1e052b5a5ba90}{getCountVertexes}}();}
+\DoxyCodeLine{00073\ \ \ }
+\DoxyCodeLine{00078\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classs21_1_1_model_afddc6ec147e919eb4e1fe708258fc7bb}{getCountPolygons}}();}
+\DoxyCodeLine{00079\ \ \ }
+\DoxyCodeLine{00084\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classs21_1_1_model_a04a1672ebcd5ebef4946956a7142febb}{getCountEdges}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00087\ \ \textcolor{comment}{//\ создать\ экземпляр\ класса\ мы\ можем\ только\ изнутри}}
+\DoxyCodeLine{00088\ \ \mbox{\hyperlink{classs21_1_1_model}{Model}}()\ \{\}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ std::vector<unsigned\ int>\ polygons\_\{\};}
+\DoxyCodeLine{00091\ \ std::vector<float>\ vertexes\_\{\};}
+\DoxyCodeLine{00092\ \ \textcolor{keywordtype}{int}\ count\_edges\_;}
+\DoxyCodeLine{00093\ \ \textcolor{keywordtype}{int}\ count\_polygons\_;}
+\DoxyCodeLine{00094\ \ \textcolor{keywordtype}{int}\ count\_vertexes\_;}
+\DoxyCodeLine{00095\ \};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classs21_1_1_model_facade}{ModelFacade}}\ \{}
+\DoxyCodeLine{00104\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00109\ \ \mbox{\hyperlink{classs21_1_1_model_facade_ad181c8d5e4dd628a1e7cfc4188d77b81}{ModelFacade}}()\ :\ model\_(\mbox{\hyperlink{classs21_1_1_model}{Model}}::getInstance())\ \{\}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00115\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_facade_a19e21b6b9f06dab10cf8c5938be7024d}{loadModel}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00116\ \ \ }
+\DoxyCodeLine{00123\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_facade_aa40a75d858c8f532aa7e45e3371b55ea}{moveModel}}(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00124\ \ \ }
+\DoxyCodeLine{00129\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_facade_a425b475deb7e3a785e57531e428dd213}{rotateModelX}}(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00130\ \ \ }
+\DoxyCodeLine{00135\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_facade_a0812ade296bdc9b4c16f23ee1cfd045f}{rotateModelY}}(\textcolor{keywordtype}{double}\ y);}
+\DoxyCodeLine{00136\ \ \ }
+\DoxyCodeLine{00141\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_facade_a7a014f702cc374f9ee9304213def01a7}{rotateModelZ}}(\textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00142\ \ \ }
+\DoxyCodeLine{00147\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_facade_a7015b49f434ecab42df80987c523c42d}{changeScale}}(\textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00148\ \ \ }
+\DoxyCodeLine{00152\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_model_facade_a8c74135d099f1fd00e2bfc1b89930e4a}{setCenter}}();}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00155\ \ \mbox{\hyperlink{classs21_1_1_model}{Model}}\&\ model\_;}
+\DoxyCodeLine{00156\ \};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \}\ \textcolor{comment}{//\ namespace\ s21}}
+
+\end{DoxyCode}

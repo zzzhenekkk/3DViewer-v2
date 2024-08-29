@@ -1,0 +1,58 @@
+\doxysection{controller.\+h}
+\hypertarget{controller_8h_source}{}\label{controller_8h_source}\index{controller/controller.h@{controller/controller.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ \#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ CH}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ CH}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ \#include\ <QMainWindow>}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ \#include\ <QFileDialog>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../model/model.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ \#include\ "{}../view/glview.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classview}{view}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }s21\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classs21_1_1_controller}{Controller}}\ \{}
+\DoxyCodeLine{00023\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \mbox{\hyperlink{classs21_1_1_controller_ae2725cc4c483b3d2adf8200474a75755}{Controller}}(\mbox{\hyperlink{classs21_1_1_model}{Model}}*\ model)\ :\ model\_(model)\{\};}
+\DoxyCodeLine{00029\ \ \ }
+\DoxyCodeLine{00034\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_controller_a5e32b31806086d1a7913ba34a9e1228e}{setView}}(\mbox{\hyperlink{classview}{view}}*\ viewTmp\_)\ \{\ view\_\ =\ viewTmp\_;\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_controller_ac1f21a7210bcd3eed12cd4a3e0ce2c9a}{loadModel}}(std::string\ path);}
+\DoxyCodeLine{00041\ \ \ }
+\DoxyCodeLine{00048\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_controller_a3d89635e0f92117a39f336fae776310a}{moveModel}}(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00049\ \ \ }
+\DoxyCodeLine{00054\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_controller_a1b0bfba9f7bf4b7cc482f530c44a52c9}{rotateModelX}}(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00055\ \ \ }
+\DoxyCodeLine{00060\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_controller_a4f42cd35f68c253b7a17c6cc78a3aa85}{rotateModelY}}(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00061\ \ \ }
+\DoxyCodeLine{00066\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_controller_a4add76cc2c06dd121e0b647c6c912752}{rotateModelZ}}(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00067\ \ \ }
+\DoxyCodeLine{00072\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_controller_a2292068af1598297fb972b0a4aef402c}{changeScale}}(\textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00073\ \ \ }
+\DoxyCodeLine{00077\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_controller_a946be7004ed02ac38d5cb43f10b39bfa}{setCenter}}();}
+\DoxyCodeLine{00078\ \ \ }
+\DoxyCodeLine{00083\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classs21_1_1_controller_ad36afd845e849a2c0e6d53fe88477171}{getCountVertexes}}();}
+\DoxyCodeLine{00084\ \ \ }
+\DoxyCodeLine{00089\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classs21_1_1_controller_af7330063923a9400e164229e368ff98f}{getCountPolygons}}();}
+\DoxyCodeLine{00090\ \ \ }
+\DoxyCodeLine{00095\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classs21_1_1_controller_abab6ce877122712d2d8bc9afc6336e85}{getCountEdges}}();}
+\DoxyCodeLine{00096\ \ \ }
+\DoxyCodeLine{00101\ \ std::vector<float>\&\ \mbox{\hyperlink{classs21_1_1_controller_af9fa5a9cb2a5a94af10ede8b8bff1a8c}{getVertexes}}();}
+\DoxyCodeLine{00102\ \ \ }
+\DoxyCodeLine{00107\ \ std::vector<unsigned\ int>\&\ \mbox{\hyperlink{classs21_1_1_controller_acd57d0bee3ac578c1af4442a8827392b}{getPolygons}}();}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00110\ \ \mbox{\hyperlink{classs21_1_1_model}{Model}}*\ model\_;\ }
+\DoxyCodeLine{00111\ \ \mbox{\hyperlink{classview}{view}}*\ view\_\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00112\ \};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \}\ \textcolor{comment}{//\ namespace\ s21}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

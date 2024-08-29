@@ -1,0 +1,148 @@
+\doxysection{s21\+::Validator Class Reference}
+\hypertarget{classs21_1_1_validator}{}\label{classs21_1_1_validator}\index{s21::Validator@{s21::Validator}}
+
+
+Класс для проверки валидности вершин и граней.  
+
+
+
+
+{\ttfamily \#include $<$validator.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classs21_1_1_validator_ac77c8a8619451d9bcc7fc41b1bf51b71}{check\+Vertexes}} (\mbox{\hyperlink{classs21_1_1_vertexes}{Vertexes}} v)
+\begin{DoxyCompactList}\small\item\em Проверяет валидность коллекции вершин. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1_validator_ace129409ae9704ee3827680e2e600148}{check\+Facets}} (\mbox{\hyperlink{classs21_1_1_polygons}{Polygons}} p)
+\begin{DoxyCompactList}\small\item\em Проверяет валидность коллекции граней. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classs21_1_1_validator}{Validator}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classs21_1_1_validator_ab251eb70519e2de9f31a4b91a12e3c9e}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Получает экземпляр класса \doxylink{classs21_1_1_validator}{Validator}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classs21_1_1_validator_a6c8e0f1170a161b93b136b10621bb2e7}\label{classs21_1_1_validator_a6c8e0f1170a161b93b136b10621bb2e7} 
+{\bfseries Validator} ()=default
+\begin{DoxyCompactList}\small\item\em Защищенный конструктор по умолчанию. \end{DoxyCompactList}\item 
+\Hypertarget{classs21_1_1_validator_ab7227d3418cce25d312be7801637381d}\label{classs21_1_1_validator_ab7227d3418cce25d312be7801637381d} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Validator} ()
+\begin{DoxyCompactList}\small\item\em Деструктор. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1_validator_accba0e8fecf7c0a325e14cb830904c26}{Validator}} (const \mbox{\hyperlink{classs21_1_1_validator}{Validator}} \&other)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1_validator_a1a2e215a44615333d65f6d013ae72846}{Validator}} (\mbox{\hyperlink{classs21_1_1_validator}{Validator}} \&\&other)
+\begin{DoxyCompactList}\small\item\em Конструктор перемещения. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_validator_ad6164b668e920b92ea05a81defc2b5ab}{operator=}} (const \mbox{\hyperlink{classs21_1_1_validator}{Validator}} \&other)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для проверки валидности вершин и граней. 
+
+Этот класс предоставляет методы для проверки валидности коллекций вершин и граней. Реализует синглтон паттерн для обеспечения единственного экземпляра валидатора. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classs21_1_1_validator_accba0e8fecf7c0a325e14cb830904c26}\label{classs21_1_1_validator_accba0e8fecf7c0a325e14cb830904c26} 
+\index{s21::Validator@{s21::Validator}!Validator@{Validator}}
+\index{Validator@{Validator}!s21::Validator@{s21::Validator}}
+\doxysubsubsection{\texorpdfstring{Validator()}{Validator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily s21\+::\+Validator\+::\+Validator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1_validator}{Validator}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Конструктор копирования. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для копирования. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_validator_a1a2e215a44615333d65f6d013ae72846}\label{classs21_1_1_validator_a1a2e215a44615333d65f6d013ae72846} 
+\index{s21::Validator@{s21::Validator}!Validator@{Validator}}
+\index{Validator@{Validator}!s21::Validator@{s21::Validator}}
+\doxysubsubsection{\texorpdfstring{Validator()}{Validator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily s21\+::\+Validator\+::\+Validator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1_validator}{Validator}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Конструктор перемещения. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для перемещения. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classs21_1_1_validator_ace129409ae9704ee3827680e2e600148}\label{classs21_1_1_validator_ace129409ae9704ee3827680e2e600148} 
+\index{s21::Validator@{s21::Validator}!checkFacets@{checkFacets}}
+\index{checkFacets@{checkFacets}!s21::Validator@{s21::Validator}}
+\doxysubsubsection{\texorpdfstring{checkFacets()}{checkFacets()}}
+{\footnotesize\ttfamily bool s21\+::\+Validator\+::check\+Facets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1_polygons}{Polygons}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Проверяет валидность коллекции граней. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Коллекция граней для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если коллекция граней валидна, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_validator_ac77c8a8619451d9bcc7fc41b1bf51b71}\label{classs21_1_1_validator_ac77c8a8619451d9bcc7fc41b1bf51b71} 
+\index{s21::Validator@{s21::Validator}!checkVertexes@{checkVertexes}}
+\index{checkVertexes@{checkVertexes}!s21::Validator@{s21::Validator}}
+\doxysubsubsection{\texorpdfstring{checkVertexes()}{checkVertexes()}}
+{\footnotesize\ttfamily bool s21\+::\+Validator\+::check\+Vertexes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1_vertexes}{Vertexes}}}]{v }\end{DoxyParamCaption})}
+
+
+
+Проверяет валидность коллекции вершин. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Коллекция вершин для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если коллекция вершин валидна, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_validator_ab251eb70519e2de9f31a4b91a12e3c9e}\label{classs21_1_1_validator_ab251eb70519e2de9f31a4b91a12e3c9e} 
+\index{s21::Validator@{s21::Validator}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!s21::Validator@{s21::Validator}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classs21_1_1_validator}{Validator}} \texorpdfstring{$\ast$}{*} s21\+::\+Validator\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Получает экземпляр класса \doxylink{classs21_1_1_validator}{Validator}. 
+
+\begin{DoxyReturn}{Returns}
+Указатель на экземпляр класса \doxylink{classs21_1_1_validator}{Validator}. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_validator_ad6164b668e920b92ea05a81defc2b5ab}\label{classs21_1_1_validator_ad6164b668e920b92ea05a81defc2b5ab} 
+\index{s21::Validator@{s21::Validator}!operator=@{operator=}}
+\index{operator=@{operator=}!s21::Validator@{s21::Validator}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void s21\+::\+Validator\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1_validator}{Validator}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Оператор присваивания. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для присваивания. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/utils/validator.\+h\end{DoxyCompactItemize}

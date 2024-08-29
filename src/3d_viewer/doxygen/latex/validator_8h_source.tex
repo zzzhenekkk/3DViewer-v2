@@ -1,0 +1,41 @@
+\doxysection{validator.\+h}
+\hypertarget{validator_8h_source}{}\label{validator_8h_source}\index{model/utils/validator.h@{model/utils/validator.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../model/polygons.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}../model/vertexes.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }s21\ \{}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classs21_1_1_validator}{Validator}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classs21_1_1_validator_ac77c8a8619451d9bcc7fc41b1bf51b71}{checkVertexes}}(\mbox{\hyperlink{classs21_1_1_vertexes}{Vertexes}}\ v);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classs21_1_1_validator_ace129409ae9704ee3827680e2e600148}{checkFacets}}(\mbox{\hyperlink{classs21_1_1_polygons}{Polygons}}\ p);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classs21_1_1_validator}{Validator}}*\ \mbox{\hyperlink{classs21_1_1_validator_ab251eb70519e2de9f31a4b91a12e3c9e}{getInstance}}()\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!instance)\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classs21_1_1_validator_a6c8e0f1170a161b93b136b10621bb2e7}{Validator}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classs21_1_1_validator_a6c8e0f1170a161b93b136b10621bb2e7}{Validator}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{classs21_1_1_validator_ab7227d3418cce25d312be7801637381d}{\string~Validator}}()\ \{\ \textcolor{keyword}{delete}\ instance;\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{classs21_1_1_validator_accba0e8fecf7c0a325e14cb830904c26}{Validator}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_validator}{Validator}}\ \&other);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{classs21_1_1_validator_a1a2e215a44615333d65f6d013ae72846}{Validator}}(\mbox{\hyperlink{classs21_1_1_validator}{Validator}}\ \&\&other);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_validator_ad6164b668e920b92ea05a81defc2b5ab}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_validator}{Validator}}\ \&other);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classs21_1_1_validator}{Validator}}\ *instance;}
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \}\ \textcolor{comment}{//\ namespace\ s21}}
+
+\end{DoxyCode}

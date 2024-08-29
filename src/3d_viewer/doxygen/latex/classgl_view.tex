@@ -1,0 +1,146 @@
+\doxysection{gl\+View Class Reference}
+\hypertarget{classgl_view}{}\label{classgl_view}\index{glView@{glView}}
+
+
+Класс для работы с Open\+GL визуализацией.  
+
+
+
+
+{\ttfamily \#include $<$glview.\+h$>$}
+
+Inheritance diagram for gl\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgl_view}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgl_view_ab9e843d39418a8507acc001faf33ede8}{gl\+View}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор \doxylink{classgl_view}{gl\+View}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl_view_a04ce5852a886397431bc7ebc38ca6b48}{set\+Controller}} (\mbox{\hyperlink{classs21_1_1_controller}{s21\+::\+Controller}} \texorpdfstring{$\ast$}{*}controller)
+\begin{DoxyCompactList}\small\item\em Установка контроллера. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs21_1_1setting}{s21\+::\+Setting}} \& \mbox{\hyperlink{classgl_view_a7b63f0087f959b05cf9f3497cfa7ab48}{get\+Setting}} ()
+\begin{DoxyCompactList}\small\item\em Получение настроек. \end{DoxyCompactList}\item 
+QImage \mbox{\hyperlink{classgl_view_a592e8acfc780fc65382800f2ee6269af}{s21\+\_\+grab\+Frame\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Захват кадра из буфера кадров. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgl_view_a56138db36289e43d08da21d872f02eb0}\label{classgl_view_a56138db36289e43d08da21d872f02eb0} 
+float {\bfseries x\+Rot} = 0
+\begin{DoxyCompactList}\small\item\em Угол вращения по оси X. \end{DoxyCompactList}\item 
+\Hypertarget{classgl_view_ab2cc9314e3633f0332f052c952c8edc4}\label{classgl_view_ab2cc9314e3633f0332f052c952c8edc4} 
+float {\bfseries y\+Rot} = 0
+\begin{DoxyCompactList}\small\item\em Угол вращения по оси Y. \end{DoxyCompactList}\item 
+\Hypertarget{classgl_view_a450280a053ae07208224cac0195c4a29}\label{classgl_view_a450280a053ae07208224cac0195c4a29} 
+float {\bfseries x\+Rot\+Last} = 0
+\begin{DoxyCompactList}\small\item\em Предыдущий угол вращения по оси X. \end{DoxyCompactList}\item 
+\Hypertarget{classgl_view_a2f0141a045248e0c9953e4053a6d3232}\label{classgl_view_a2f0141a045248e0c9953e4053a6d3232} 
+float {\bfseries y\+Rot\+Last} = 0
+\begin{DoxyCompactList}\small\item\em Предыдущий угол вращения по оси Y. \end{DoxyCompactList}\item 
+\Hypertarget{classgl_view_a05d2fd5bb46b7def27d94841038fe319}\label{classgl_view_a05d2fd5bb46b7def27d94841038fe319} 
+QPoint {\bfseries mpos}
+\begin{DoxyCompactList}\small\item\em Позиция мыши. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgl_view_ab659590a85e20729a340cdec79bf451d}\label{classgl_view_ab659590a85e20729a340cdec79bf451d} 
+void {\bfseries initialize\+GL} () override
+\begin{DoxyCompactList}\small\item\em Инициализация Open\+GL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgl_view_abac6f1178af78c5bdbd3a61f03a8c318}{resize\+GL}} (int width, int height) override
+\begin{DoxyCompactList}\small\item\em Изменение размера Open\+GL виджета. \end{DoxyCompactList}\item 
+\Hypertarget{classgl_view_abc7037d40bbb6b0ca4dca440ded125d7}\label{classgl_view_abc7037d40bbb6b0ca4dca440ded125d7} 
+void {\bfseries paint\+GL} () override
+\begin{DoxyCompactList}\small\item\em Рендеринг Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для работы с Open\+GL визуализацией. 
+
+Этот класс предоставляет функциональность для отображения и взаимодействия с 3D сценой. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgl_view_ab9e843d39418a8507acc001faf33ede8}\label{classgl_view_ab9e843d39418a8507acc001faf33ede8} 
+\index{glView@{glView}!glView@{glView}}
+\index{glView@{glView}!glView@{glView}}
+\doxysubsubsection{\texorpdfstring{glView()}{glView()}}
+{\footnotesize\ttfamily gl\+View\+::gl\+View (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Конструктор \doxylink{classgl_view}{gl\+View}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Указатель на родительский виджет. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgl_view_a7b63f0087f959b05cf9f3497cfa7ab48}\label{classgl_view_a7b63f0087f959b05cf9f3497cfa7ab48} 
+\index{glView@{glView}!getSetting@{getSetting}}
+\index{getSetting@{getSetting}!glView@{glView}}
+\doxysubsubsection{\texorpdfstring{getSetting()}{getSetting()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1setting}{s21\+::\+Setting}} \& gl\+View\+::get\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение настроек. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на настройки. 
+\end{DoxyReturn}
+\Hypertarget{classgl_view_abac6f1178af78c5bdbd3a61f03a8c318}\label{classgl_view_abac6f1178af78c5bdbd3a61f03a8c318} 
+\index{glView@{glView}!resizeGL@{resizeGL}}
+\index{resizeGL@{resizeGL}!glView@{glView}}
+\doxysubsubsection{\texorpdfstring{resizeGL()}{resizeGL()}}
+{\footnotesize\ttfamily void gl\+View\+::resize\+GL (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Изменение размера Open\+GL виджета. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Ширина виджета. \\
+\hline
+{\em height} & Высота виджета. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgl_view_a592e8acfc780fc65382800f2ee6269af}\label{classgl_view_a592e8acfc780fc65382800f2ee6269af} 
+\index{glView@{glView}!s21\_grabFrameBuffer@{s21\_grabFrameBuffer}}
+\index{s21\_grabFrameBuffer@{s21\_grabFrameBuffer}!glView@{glView}}
+\doxysubsubsection{\texorpdfstring{s21\_grabFrameBuffer()}{s21\_grabFrameBuffer()}}
+{\footnotesize\ttfamily QImage gl\+View\+::s21\+\_\+grab\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Захват кадра из буфера кадров. 
+
+\begin{DoxyReturn}{Returns}
+QImage с захваченным кадром. 
+\end{DoxyReturn}
+\Hypertarget{classgl_view_a04ce5852a886397431bc7ebc38ca6b48}\label{classgl_view_a04ce5852a886397431bc7ebc38ca6b48} 
+\index{glView@{glView}!setController@{setController}}
+\index{setController@{setController}!glView@{glView}}
+\doxysubsubsection{\texorpdfstring{setController()}{setController()}}
+{\footnotesize\ttfamily void gl\+View\+::set\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1_controller}{s21\+::\+Controller}} \texorpdfstring{$\ast$}{*}}]{controller }\end{DoxyParamCaption})}
+
+
+
+Установка контроллера. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & Указатель на контроллер. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+view/glview.\+h\end{DoxyCompactItemize}

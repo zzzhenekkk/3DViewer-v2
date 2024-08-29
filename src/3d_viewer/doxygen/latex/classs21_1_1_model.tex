@@ -1,0 +1,184 @@
+\doxysection{s21\+::Model Class Reference}
+\hypertarget{classs21_1_1_model}{}\label{classs21_1_1_model}\index{s21::Model@{s21::Model}}
+
+
+Класс модели для хранения и управления геометрическими данными.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classs21_1_1_model_a33f5b0fde600de869e17d3d1055618f8}\label{classs21_1_1_model_a33f5b0fde600de869e17d3d1055618f8} 
+{\bfseries Model} (\mbox{\hyperlink{classs21_1_1_model}{Model}} const \&)=delete
+\item 
+\Hypertarget{classs21_1_1_model_a8939c02f1706eebb48be6c70fc867a2c}\label{classs21_1_1_model_a8939c02f1706eebb48be6c70fc867a2c} 
+void {\bfseries operator=} (\mbox{\hyperlink{classs21_1_1_model}{Model}} const \&)=delete
+\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1_model_ad3f78c80a6b6c7257ae9c837f1dec3fb}{get\+Vertexes}} ()
+\begin{DoxyCompactList}\small\item\em Получение вектора вершин модели. \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned int $>$ \& \mbox{\hyperlink{classs21_1_1_model_a1a6f6ac523791d8521eed07814e0f9ac}{get\+Polygons}} ()
+\begin{DoxyCompactList}\small\item\em Получение вектора полигонов модели. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_acb9fb7e1990473dfba1726664f7315b3}{load\+Model}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Загрузка модели из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_af1524fcd54b05fa8101fe26539310326}{add\+Polygon}} (std\+::vector$<$ unsigned int $>$ \&nums)
+\begin{DoxyCompactList}\small\item\em Добавление полигона в модель. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1_model_a6df7f45f0fec408df126235abecc2633}{add\+Vertex}} (float a, float b, float c)
+\begin{DoxyCompactList}\small\item\em Добавление вершины в модель. \end{DoxyCompactList}\item 
+\Hypertarget{classs21_1_1_model_a8cdce569c6f8754b91bf6814d7ad8f4d}\label{classs21_1_1_model_a8cdce569c6f8754b91bf6814d7ad8f4d} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em Очистка модели. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classs21_1_1_model_ab9e1b9f62297eb202da1e052b5a5ba90}{get\+Count\+Vertexes}} ()
+\begin{DoxyCompactList}\small\item\em Получение количества вершин в модели. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classs21_1_1_model_afddc6ec147e919eb4e1fe708258fc7bb}{get\+Count\+Polygons}} ()
+\begin{DoxyCompactList}\small\item\em Получение количества полигонов в модели. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classs21_1_1_model_a04a1672ebcd5ebef4946956a7142febb}{get\+Count\+Edges}} ()
+\begin{DoxyCompactList}\small\item\em Получение количества ребер в модели. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classs21_1_1_model}{Model}} \& \mbox{\hyperlink{classs21_1_1_model_a49dd27ec9a384e284a8e5f0aef46ec54}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Получение экземпляра класса \doxylink{classs21_1_1_model}{Model}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс модели для хранения и управления геометрическими данными. 
+
+Этот класс предоставляет функции для загрузки модели, добавления полигонов и вершин, а также получения информации о модели, такой как количество вершин, полигонов и ребер. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classs21_1_1_model_af1524fcd54b05fa8101fe26539310326}\label{classs21_1_1_model_af1524fcd54b05fa8101fe26539310326} 
+\index{s21::Model@{s21::Model}!addPolygon@{addPolygon}}
+\index{addPolygon@{addPolygon}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{addPolygon()}{addPolygon()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+::add\+Polygon (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unsigned int $>$ \&}]{nums }\end{DoxyParamCaption})}
+
+
+
+Добавление полигона в модель. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nums} & Вектор индексов вершин полигона. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_model_a6df7f45f0fec408df126235abecc2633}\label{classs21_1_1_model_a6df7f45f0fec408df126235abecc2633} 
+\index{s21::Model@{s21::Model}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+::add\+Vertex (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{c }\end{DoxyParamCaption})}
+
+
+
+Добавление вершины в модель. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Координата X вершины. \\
+\hline
+{\em b} & Координата Y вершины. \\
+\hline
+{\em c} & Координата Z вершины. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classs21_1_1_model_a04a1672ebcd5ebef4946956a7142febb}\label{classs21_1_1_model_a04a1672ebcd5ebef4946956a7142febb} 
+\index{s21::Model@{s21::Model}!getCountEdges@{getCountEdges}}
+\index{getCountEdges@{getCountEdges}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{getCountEdges()}{getCountEdges()}}
+{\footnotesize\ttfamily int s21\+::\+Model\+::get\+Count\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение количества ребер в модели. 
+
+\begin{DoxyReturn}{Returns}
+Количество ребер. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_model_afddc6ec147e919eb4e1fe708258fc7bb}\label{classs21_1_1_model_afddc6ec147e919eb4e1fe708258fc7bb} 
+\index{s21::Model@{s21::Model}!getCountPolygons@{getCountPolygons}}
+\index{getCountPolygons@{getCountPolygons}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{getCountPolygons()}{getCountPolygons()}}
+{\footnotesize\ttfamily int s21\+::\+Model\+::get\+Count\+Polygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение количества полигонов в модели. 
+
+\begin{DoxyReturn}{Returns}
+Количество полигонов. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_model_ab9e1b9f62297eb202da1e052b5a5ba90}\label{classs21_1_1_model_ab9e1b9f62297eb202da1e052b5a5ba90} 
+\index{s21::Model@{s21::Model}!getCountVertexes@{getCountVertexes}}
+\index{getCountVertexes@{getCountVertexes}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{getCountVertexes()}{getCountVertexes()}}
+{\footnotesize\ttfamily int s21\+::\+Model\+::get\+Count\+Vertexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение количества вершин в модели. 
+
+\begin{DoxyReturn}{Returns}
+Количество вершин. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_model_a49dd27ec9a384e284a8e5f0aef46ec54}\label{classs21_1_1_model_a49dd27ec9a384e284a8e5f0aef46ec54} 
+\index{s21::Model@{s21::Model}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classs21_1_1_model}{Model}} \& s21\+::\+Model\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получение экземпляра класса \doxylink{classs21_1_1_model}{Model}. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на экземпляр класса \doxylink{classs21_1_1_model}{Model}. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_model_a1a6f6ac523791d8521eed07814e0f9ac}\label{classs21_1_1_model_a1a6f6ac523791d8521eed07814e0f9ac} 
+\index{s21::Model@{s21::Model}!getPolygons@{getPolygons}}
+\index{getPolygons@{getPolygons}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{getPolygons()}{getPolygons()}}
+{\footnotesize\ttfamily std\+::vector$<$ unsigned int $>$ \& s21\+::\+Model\+::get\+Polygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение вектора полигонов модели. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на вектор полигонов. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_model_ad3f78c80a6b6c7257ae9c837f1dec3fb}\label{classs21_1_1_model_ad3f78c80a6b6c7257ae9c837f1dec3fb} 
+\index{s21::Model@{s21::Model}!getVertexes@{getVertexes}}
+\index{getVertexes@{getVertexes}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{getVertexes()}{getVertexes()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Model\+::get\+Vertexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение вектора вершин модели. 
+
+\begin{DoxyReturn}{Returns}
+Ссылка на вектор вершин. 
+\end{DoxyReturn}
+\Hypertarget{classs21_1_1_model_acb9fb7e1990473dfba1726664f7315b3}\label{classs21_1_1_model_acb9fb7e1990473dfba1726664f7315b3} 
+\index{s21::Model@{s21::Model}!loadModel@{loadModel}}
+\index{loadModel@{loadModel}!s21::Model@{s21::Model}}
+\doxysubsubsection{\texorpdfstring{loadModel()}{loadModel()}}
+{\footnotesize\ttfamily void s21\+::\+Model\+::load\+Model (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Загрузка модели из файла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Путь к файлу модели. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/model.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\doxysection{affine.\+h}
+\hypertarget{affine_8h_source}{}\label{affine_8h_source}\index{model/utils/affine.h@{model/utils/affine.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ SCALE\_FACTOR\ 1.5}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}../model/vertexes.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }s21\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classs21_1_1_affine}{Affine}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classs21_1_1_affine_a6272e7707be00bfc1cc459aed215af82}{Affine}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_affine_ab03d4f81162545115cd14e92ede2c0c7}{normalize}}(std::vector<float>\&\ vektorVertexes);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_affine_ad3e61e38341c9a75cc2032a4a6138b75}{changeScale}}(std::vector<float>\&\ vektorVertexes,\ \textcolor{keywordtype}{float}\ coef);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_affine_a49b5b214e1fe53a705bdea3517c71d98}{centralize}}(std::vector<float>\&\ vektorVertexes);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_affine_ad0c2b16c756b3f35449318bf38bc9962}{shift}}(std::vector<float>\&\ vektorVertexes,\ \textcolor{keywordtype}{double}\ value1,\ \textcolor{keywordtype}{double}\ value2,\ \textcolor{keywordtype}{double}\ value3);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_affine_a8e7de349873e1f9a4cb260755a2e79a5}{rotateX}}(std::vector<float>\&\ vektorVertexes,\ \textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_affine_af45687624d107f726829ff1a09a52942}{rotateY}}(std::vector<float>\&\ vektorVertexes,\ \textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classs21_1_1_affine_acbc3d686171eebed55259416b1bb00f8}{rotateZ}}(std::vector<float>\&\ vektorVertexes,\ \textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{classs21_1_1_affine_a6272e7707be00bfc1cc459aed215af82}{Affine}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_affine}{Affine}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{classs21_1_1_affine}{Affine}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classs21_1_1_affine}{Affine}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ getCenter(std::vector<float>\&\ vektorVertexes,\ \textcolor{keywordtype}{int}\ ax);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ setCenter(std::vector<float>\&\ vektorVertexes,\ \textcolor{keywordtype}{int}\ ax,\ \textcolor{keywordtype}{float}\ cent);}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \}\ \textcolor{comment}{//\ namespace\ s21}}
+
+\end{DoxyCode}
